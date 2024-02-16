@@ -1,0 +1,92 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* App.css */
+.App {
+  text-align: center;
+}
+
+html {
+  background-color: #000;
+}
+
+.NavLeft {
+  float: left;
+  padding: 3vh;
+  margin: 3vh;
+  list-style-type: none;
+  font-size: 28px;
+  color: white;
+}
+
+.NavRight {
+  float: right;
+  padding: 3vh;
+  margin: 3vh;
+  list-style-type: none;
+  font-size: 28px;
+  color: rgba(255, 255, 255, 0);
+}
+
+.MainContent {
+  /* Add your styles for main content */
+  background-color: black;
+}
+
+.Wallpaper {
+  background-color: black; /* Replace with actual wallpaper or image */
+  background-image: url('../assets/ivan.\(1\).svg');
+  background-size: cover;
+  height: 100vh; /* Adjust as necessary */
+  position: sticky;
+}
+
+ul li {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.PortfolioGrid, .WorkExperienceGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  background-color: black;
+  color: #f1efe7;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  padding-bottom: 10vh;
+}
+
+.PortfolioItem, .WorkExperienceItem {
+  border: 1px solid #f1efe7; 
+  background-color: black;
+  color: #f1efe7;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  padding: 1vh;
+}
+
+.ItemHeader {
+  color: #f1efe7;
+}
