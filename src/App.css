@@ -57,9 +57,12 @@ html {
 .Wallpaper {
   background-color: black; /* Replace with actual wallpaper or image */
   background-image: url('../assets/ivan.svg');
-  background-size: cover;
+  background-size: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 100vh; /* Adjust as necessary */
   position: sticky;
+  padding: auto;
 }
 
 ul li {
@@ -73,7 +76,7 @@ ul li {
   gap: 16px;
   background-color: black;
   color: #f1efe7;
-  margin-top: 10vh;
+  margin-top: 5vh;
   margin-bottom: 10vh;
   padding-bottom: 10vh;
 }
@@ -82,7 +85,7 @@ ul li {
   border: 1px solid #f1efe7; 
   background-color: black;
   color: #f1efe7;
-  margin-top: 10vh;
+  margin-top: 5vh;
   margin-bottom: 10vh;
   padding: 1vh;
 }
