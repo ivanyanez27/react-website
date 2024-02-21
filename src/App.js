@@ -5,21 +5,18 @@ import MainContent from './MainContent';
 const portfolioItems = [
   {
     id: 1,
-    title: 'Project One',
-    description: 'A brief description of Project One.',
-    projectUrl: 'http://link-to-live-project.com',
+    title: 'Flight Planner Application',
+    projectUrl: 'https://github.com/ivanyanez27/flight-planner',
   },
   {
     id: 2,
-    title: 'Project Two',
-    description: 'A brief description of Project Two.',
-    projectUrl: 'http://link-to-live-project-two.com',
+    title: 'Personal Website on React',
+    projectUrl: 'https://github.com/ivanyanez27/react-website',
   },
   {
     id: 3,
-    title: 'Project Three',
-    description: 'A brief description of Project Three.',
-    projectUrl: 'http://link-to-live-project-three.com',
+    title: 'Movie Recommender System',
+    projectUrl: 'https://github.com/ivanyanez27/movie-recommender-project',
   },
 ];
 
