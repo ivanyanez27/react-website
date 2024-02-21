@@ -57,12 +57,39 @@ html {
 .Wallpaper {
   background-color: black; /* Replace with actual wallpaper or image */
   background-image: url('../assets/ivan.svg');
-  background-size: 100vh;
-  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 100vh; /* Adjust as necessary */
   position: sticky;
   padding: auto;
+}
+
+/* Medium devices (tablets) */
+@media (max-width: 899px) {
+  .Wallpaper {
+    background-color: black; /* Replace with actual wallpaper or image */
+    background-image: url('../assets/ivan.svg');
+    background-size: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Adjust as necessary */
+    position: sticky;
+    padding: auto;
+  }
+}
+
+/* Small devices (mobile) */
+@media (max-width: 599px) {
+  .Wallpaper {
+    background-color: black; /* Replace with actual wallpaper or image */
+    background-image: url('../assets/ivan.svg');
+    background-size: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Adjust as necessary */
+    position: sticky;
+    padding: auto;
+  }
 }
 
 ul li {
