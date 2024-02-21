@@ -15,7 +15,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #f1efe7;
 }
 
 .App-link {
@@ -36,7 +36,7 @@ html {
   margin: 3vh;
   list-style-type: none;
   font-size: 28px;
-  color: white;
+  color: #f1efe7;
 }
 
 .NavRight {
@@ -144,6 +144,17 @@ ul li {
   border: 1px solid #f1efe7; 
   background-color: black;
   color: #f1efe7;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+  margin-left: 7vh;
+  margin-right: 7vh;
+  padding: 1vh;
+}
+
+.PortfolioItem:hover, .ExperienceItem:hover {
+  border: 1px solid black; 
+  background-color: #f1efe7;
+  color: black;
   margin-top: 5vh;
   margin-bottom: 10vh;
   margin-left: 7vh;

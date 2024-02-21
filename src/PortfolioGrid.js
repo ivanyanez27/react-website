@@ -9,10 +9,15 @@ function PortfolioGrid({ portfolioItems }) {
     AOS.init();
   }, [])
 
+const handleItemClick = (item) => {
+    window.location.href = item.projectUrl;
+    console.log(item.projectUrl)
+  };
+
   return (
     <div className="PortfolioGrid">
       {portfolioItems.map(item => (
-        <div key={item.id} className="PortfolioItem" data-aos="zoom-in-up">
+        <div key={item.id} className="PortfolioItem" data-aos="zoom-in-up" onClick={() => handleItemClick(item)} style={{ cursor: 'pointer' }}>
           <h3>{item.title}</h3>
           <a href={item.projectUrl} target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faGithub} />

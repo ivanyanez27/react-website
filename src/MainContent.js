@@ -6,9 +6,9 @@ function MainContent({ portfolioItems, experienceItems }) {
   return (
     <div className="MainContent">
       <div className="Wallpaper"></div>
-      <h2 className='ItemHeader'>Experience</h2>
+      <h2 className='ItemHeader' data-aos="zoom-in-up">Experience</h2>
       <ExperienceGrid experienceItems={experienceItems} />
-      <h2 className='ItemHeader'>Portfolio</h2>
+      <h2 className='ItemHeader' data-aos="zoom-in-up">Portfolio</h2>
       <PortfolioGrid portfolioItems={portfolioItems} />
     </div>
   );
