@@ -1,6 +1,5 @@
-// App.js
-import React from 'react';
-import './App.css'
+import React, { useEffect } from 'react';
+import './App.css';
 import MainContent from './MainContent';
 
 const portfolioItems = [
@@ -44,6 +43,10 @@ const experienceItems = [
 
 
 function App() {
+  useEffect(() => {
+    document.title = 'Ivan Yanez';
+  }, []);
+
   return (
     <div className="App">
       <MainContent portfolioItems={portfolioItems} experienceItems={experienceItems} />
