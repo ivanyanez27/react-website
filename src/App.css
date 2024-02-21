@@ -67,7 +67,7 @@ ul li {
   font-weight: bold;
 }
 
-.PortfolioGrid, .WorkExperienceGrid {
+.PortfolioGrid, .ExperienceGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
@@ -78,7 +78,7 @@ ul li {
   padding-bottom: 10vh;
 }
 
-.PortfolioItem, .WorkExperienceItem {
+.PortfolioItem, .ExperienceItem {
   border: 1px solid #f1efe7; 
   background-color: black;
   color: #f1efe7;
