@@ -22,10 +22,9 @@ const portfolioItems = [
     description: 'A brief description of Project Three.',
     projectUrl: 'http://link-to-live-project-three.com',
   },
-  // ... more portfolio items
 ];
 
-const workExperienceItems = [
+const experienceItems = [
   {
     id: 1,
     role: 'Software Engineer II - Tech Analyst',
@@ -41,14 +40,13 @@ const workExperienceItems = [
     role: 'Software Engineer - Tech Analyst Intern',
     company: 'Bank of America'
   },
-  // ... more work experience entries
 ];
 
 
 function App() {
   return (
     <div className="App">
-      <MainContent portfolioItems={portfolioItems} workExperienceItems={workExperienceItems} />
+      <MainContent portfolioItems={portfolioItems} experienceItems={experienceItems} />
     </div>
   );
 }
