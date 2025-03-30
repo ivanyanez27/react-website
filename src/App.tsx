@@ -1,8 +1,7 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, ExternalLink, Code } from 'lucide-react';
 import Section from './components/Section';
-import profilePicture from '../public/mypicture.jpg'
+import profilePicture from '../public/mypicture.jpg';
 
 function App() {
   const fadeInUp = {
@@ -33,6 +32,38 @@ function App() {
         stiffness: 400,
       },
     },
+  };
+
+  const nameAnimation = {
+    initial: { 
+      backgroundSize: "200% 200%",
+      backgroundPosition: "left center"
+    },
+    hover: { 
+      backgroundSize: "200% 200%",
+      backgroundPosition: "right center",
+      scale: 1.05,
+      transition: { 
+        duration: 0.4,
+        ease: "easeInOut"
+      }
+    }
+  };
+
+  const borderAnimation = {
+    initial: {
+      background: "linear-gradient(0deg, #6366f1, #8b5cf6)",
+      rotate: 0
+    },
+    animate: {
+      background: ["linear-gradient(0deg, #6366f1, #8b5cf6)", "linear-gradient(360deg, #6366f1, #8b5cf6)"],
+      rotate: 360,
+      transition: {
+        duration: 8,
+        repeat: Infinity,
+        ease: "linear"
+      }
+    }
   };
 
   const technologies = [
@@ -66,18 +97,45 @@ function App() {
           <motion.div 
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
+            whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.5 }}
-            className="w-48 h-48 mx-auto mb-8 rounded-full overflow-hidden border-4 border-primary/20 shadow-xl"
+            className="relative w-48 h-48 mx-auto mb-8 group"
           >
-            <img
-              src={profilePicture}
-              alt="Profile picture"
-              className="w-full h-full object-cover"
+            <motion.div
+              initial="initial"
+              animate="animate"
+              variants={borderAnimation}
+              className="absolute -inset-2 rounded-full opacity-75 group-hover:opacity-100 blur-sm transition-opacity duration-500"
             />
+            <motion.div
+              initial="initial"
+              animate="animate"
+              variants={borderAnimation}
+              className="absolute inset-0 rounded-full"
+            />
+            <motion.div 
+              className="absolute inset-1 rounded-full overflow-hidden bg-dark-950"
+              whileHover={{ scale: 1.02 }}
+              transition={{ duration: 0.3 }}
+            >
+              <img
+                src={profilePicture}
+                alt="Profile picture"
+                className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
+              />
+            </motion.div>
           </motion.div>
 
           <h1 className="text-3xl xs:text-4xl sm:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight text-center">
-            Hi, I'm <span className="text-primary">Ivan Yanez</span>
+            Hi, I'm{" "}
+            <motion.span
+              initial="initial"
+              whileHover="hover"
+              variants={nameAnimation}
+              className="inline-block bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent cursor-pointer"
+            >
+              Ivan Yanez
+            </motion.span>
           </h1>
           <p className="text-base xs:text-lg sm:text-xl text-gray-300 mb-6 md:mb-8 max-w-2xl mx-auto text-center">
             A passionate full-stack developer specializing in React, Node.js, and cloud technologies.
