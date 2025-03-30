@@ -13,4 +13,4 @@ const Section: React.FC<SectionProps> = ({ children, className = '' }) => {
   );
 };
 
-export default Section;
+export default Section; 
